@@ -1,4 +1,4 @@
-//Player
+
 let playerRight = new Image();
 playerRight.src = '/image/sharkRight.gif';
 let playerLeft = new Image();

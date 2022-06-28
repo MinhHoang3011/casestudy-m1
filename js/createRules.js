@@ -1,7 +1,5 @@
 const enemyArr = [];
 
-
-
 function rateEnemies() {
     let randomRadius;
     let random1 = Math.random() <= 0.50 ? 20 :  Math.random() >= 0.8 ? 45 : 35;

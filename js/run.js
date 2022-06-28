@@ -1,4 +1,4 @@
-// Canvas init
+
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -15,31 +15,31 @@ const mouse = {
     y: canvas.height/2
 }
 
-// Start game
+
 canvas.addEventListener('click', () => {
     drawHigh();
     start = true;
 })
-//Mouse move
+
 canvas.addEventListener('mousemove', event => {
     if(start) {
         mouse.x = event.x;
         mouse.y = event.y;
     }
 })
-//Audio
+
 function eating() {
     document.getElementById('eating').play();
     window.removeEventListener('click', eating)
 }
-// End game
+
 function endGame() {
     ctx.font = "30px Arial"
     ctx.fillStyle = 'red';
     ctx.fillText('GAME OVER!!!, YOUR SCORE   ' + score , canvas.width/3 , 275)
     gameOver = true;
 }
-// Background
+
 let bgImgSky = new Image();
 bgImgSky.src = '/image/New Project.png'
 const bgSky = {
@@ -84,7 +84,7 @@ function drawBG() {
 }
 
 
-// heartIMG
+
 let heartImg = new Image();
 heartImg.src = '/image/100-percent.png';
 let sunImg = new Image();
@@ -98,7 +98,7 @@ function drawHigh() {
     }
 }
 
-//Loop Animation Frame
+
 ctx.font = "25px Arial";
 function animation () {
     ctx.clearRect(0, 0,canvas.width ,canvas.height);

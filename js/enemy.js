@@ -9,8 +9,6 @@ class Enemy {
         this.direction;
     }
 }
-
-// Create Img
 // Small
 let smallFishImgRight = new Image();
 smallFishImgRight.src = '/image/smallFishRight.gif';
